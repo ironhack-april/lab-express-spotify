@@ -50,6 +50,9 @@ app.get('/searchArtist', (req,res,next)=>{
 })
 
 
+
+
+
 //http://localhost:3000/albums/2QsynagSdAqZj3U9HgDzjD
 app.get('/albums/:identification', (req,res,next)=>{
     spotifyApi.getArtistAlbums(req.params.identification).then(data=>{
